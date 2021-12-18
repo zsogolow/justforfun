@@ -1,5 +1,11 @@
 # justforfun
 
+## Fun Stuff 
+
+* Node.js
+* .NET Core - Web
+* ... more fun stuff later
+
 ## Node.js
 
 ### Getting Started
@@ -12,7 +18,7 @@
 
 The `build.sh` will build the docker image. The app contents are copied inside the image at build time.
 
-    cd node/
+    cd nodejs/
     ./build.sh
 
 
@@ -20,7 +26,7 @@ The `build.sh` will build the docker image. The app contents are copied inside t
 
 In the same directory as the build step, execute the `run.sh` script.
 
-    cd node/
+    cd nodejs/
     ./run.sh
 
 
@@ -33,13 +39,13 @@ Open a browser and navigate to: [http://localhost:49160](http://localhost:49160)
 
 To stop the app and remove the container, run the `stop.sh` script.
 
-    cd node/
+    cd nodejs/
     ./stop.sh
 
 
 <hr>
 
-## .NET Core Web
+## .NET Core - Web
 
 ### Getting Started
 
