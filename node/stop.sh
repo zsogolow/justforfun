@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker stop justforfunsies
+docker stop justforfunsies-node
