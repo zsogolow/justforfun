@@ -62,6 +62,14 @@ The `build.sh` will build the docker image. The app contents are copied inside t
     ./build.sh
 
 
+#### Developing the App
+
+In the same directory as the build step, execute the `watch.sh` script.
+This will start the web app in watch mode with hot reloading.
+
+    cd dotnet-web/
+    ./watch.sh
+
 #### Running the App
 
 In the same directory as the build step, execute the `run.sh` script.
@@ -84,8 +92,6 @@ To stop the app and remove the container, run the `stop.sh` script.
 
 
 <hr>
-
-## more fun stuff later
 
 ## .NET Core - Web API
 
