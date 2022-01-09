@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  dotnet-web:
+    container_name: dotnet-web
+    build: 
+      context: .
+      dockerfile: ./docker/Dockerfile-watch
+    ports:
+      - 8080:80
+    volumes:
+      - ./app:/app

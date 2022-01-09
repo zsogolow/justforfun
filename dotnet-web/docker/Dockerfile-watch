@@ -1,0 +1,13 @@
+# syntax=docker/dockerfile:1
+FROM mcr.microsoft.com/dotnet/sdk AS build-env
+WORKDIR /app
+
+# Copy csproj and restore as distinct layers
+COPY ./app/*.csproj .
+RUN dotnet restore
+
+# Copy everything else
+COPY ../app/* .
+
+RUN dotnet dev-certs https
+ENTRYPOINT dotnet watch run --urls=http://+:80 --project dotnet-web.csproj
